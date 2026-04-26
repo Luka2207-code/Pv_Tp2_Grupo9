@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej 10</title>
+</head>
+<body>
+    <script>
+        const cant= parseInt(prompt(`Ingrese la cantidad de numeros que desea ingresar:`));
+        let numeros= [];
+        let suma= 0;
+        for(let i=1; i<=cant; i++){
+            numeros.push(+prompt(`Ingrese el numero ${i}:`));
+        }
+        for(let i=0; i<numeros.length; i++){
+            document.write(`El numero nro ${i+1} es: ${numeros[i]}`);
+            document.write(`<br>`);
+            suma+=numeros[i];
+        }
+        document.write(`El promedio de los numeros ingresados es: ${(suma/cant).toFixed(2)}`);
+    </script>
+</body>
+</html>
